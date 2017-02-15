@@ -1,0 +1,18 @@
+{% extends 'menu.html' %}
+{% load static %}
+{% block content %}
+
+<li><h1>Register</h1></li>
+
+<div>
+	<form action="" method = "POST">
+	{% csrf_token %}
+		{{form}}
+		<input type="submit" value="Submit">
+	</form>
+</div>
+
+
+
+
+{% endblock %}
