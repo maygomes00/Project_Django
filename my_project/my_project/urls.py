@@ -23,7 +23,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.home, name = 'home'),
     url(r'^services/', views.services, name = 'services'),
-    url(r'^register/', views.register, name = 'register'),
-    url(r'^login/', views.login, name = 'login'),
+    url(r'^register/$', views.register, name = 'register'),
+    url(r'^register/animal', views.register_animal, name = 'animal'),
+    url(r'^login/', views.login_user, name = 'login'),
     url(r'^contact/', views.contact, name = 'contact'),
 ]

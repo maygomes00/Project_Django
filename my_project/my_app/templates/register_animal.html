@@ -1,13 +1,14 @@
 {% extends 'menu.html' %}
 {% load static %}
 {% block content %}
+{% load crispy_forms_tags %}
 
-<li><h1>Login</h1></li>
+<li><h1>Register Animal</h1></li>
 
 <div>
 	<form action="" method = "POST">
 	{% csrf_token %}
-		{{form}}
+		{{form | crispy}}
 		<input type="submit" value="Submit">
 	</form>
 </div>

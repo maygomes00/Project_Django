@@ -38,11 +38,11 @@ class Client(models.Model):
 class Address(models.Model):
 	street = models.CharField(max_length = 100)
 	num = models.CharField(max_length = 100)
-	bairro = models.CharField(max_length = 100)
+	district = models.CharField(max_length = 100)
 	city = models.CharField(max_length = 100)
 
 	def __unicode__(self):
-		return self.street + "," + " " + self.num + " " + "-" + " " + self.bairro + "," + " " + self.city
+		return self.street + "," + " " + self.num + " " + "-" + " " + self.district + "," + " " + self.city
 		
 		
 
